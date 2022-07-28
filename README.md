@@ -7,7 +7,7 @@ Use the javascript package manage npm inside server folder.
 ```bash
 npm install 
 ```
-Fill in .env file using env.xample file.
+Fill in .env file using env.example file.
 
 ## Usage
 Use this commands to start application server.
