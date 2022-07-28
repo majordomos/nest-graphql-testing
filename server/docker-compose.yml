@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: tmm0gqgB1
+      MONGO_INITDB_DATABASE: booking-events
+      MONGODB_PORT: 27017
+      MONDODB_INSIDE_PORT: 27018
+    restart: always
+    ports: 
+      - ${MONGODB_PORT}:${MONDODB_INSIDE_PORT}
+    volumes: 
+    - ~/apps/mongo:/data/db
